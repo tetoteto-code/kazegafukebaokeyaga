@@ -1,6 +1,3 @@
-import { useState, useEffect, useRef, useCallback } from "react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
-
 /* ═══════════════════════════════════════════════════════
    BASELINE DATA — 2025 historical + 2026 rolling
 ═══════════════════════════════════════════════════════ */
