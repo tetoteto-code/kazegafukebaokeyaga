@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My React App</title>
-    <!-- ReactとBabel（JSX変換用）を読み込み -->
-    <script src="https://unpkg.com" crossorigin></script>
-    <script src="https://unpkg.com" crossorigin></script>
-    <script src="https://unpkg.com"></script>
-    <!-- Tailwind CSS（もしClaudeがデザインに使用していれば必要） -->
+    <!-- 読み込み先をcdnjsに変更してエラーを対策 -->
+    <script src="https://cloudflare.com" crossorigin></script>
+    <script src="https://cloudflare.com" crossorigin></script>
+    <script src="https://cloudflare.com" crossorigin></script>
+    <!-- Tailwind CSS（デザイン用） -->
     <script src="https://tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
     <div id="root"></div>
 
-    <!-- 自分のJSXファイルを読み込む -->
-    <script type="text/javascript" src="App.jsx" data-type="text/babel"></script>
+    <!-- 自分のJSXファイルを読み込む（小文字のapp.jsxに変更） -->
+    <script type="text/javascript" src="app.jsx" data-type="text/babel"></script>
 </body>
 </html>
