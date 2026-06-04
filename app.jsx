@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef, useCallback } from "react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from "recharts";
+// UMD globals — no import/export needed when loaded via CDN + Babel
+const { useState, useEffect, useRef, useCallback } = React;
+const { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } = Recharts;
+
 
 // STORES sorted by distance from White House
 const STORES = [
@@ -100,7 +102,7 @@ function CountdownRing({ secondsLeft, total }) {
 
 const INTERVAL_SEC = 30 * 60;
 
-export default function App() {
+function App() {
   const [intel, setIntel] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -440,3 +442,8 @@ export default function App() {
     </div>
   );
 }
+
+
+// Mount
+const _root = ReactDOM.createRoot(document.getElementById('root'));
+_root.render(React.createElement(App));
