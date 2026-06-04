@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My React App</title>
-    <!-- 絶対にCORSエラーが起きない安定した配信元に変更 -->
-    <script src="https://googleapis.com" crossorigin></script>
-    <script src="https://googleapis.com" crossorigin></script>
-    <script src="https://cloudflare.com" crossorigin></script>
-    <!-- Tailwind CSS -->
-    <script src="https://tailwindcss.com"></script>
-    <!-- Lucide アイコン -->
-    <script src="https://unpkg.com"></script>
-</head>
-<body class="bg-gray-100">
-    <div id="root"></div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WH Food Corridor Monitor</title>
 
-    <!-- 末尾に ?v=2 をつけてブラウザの古いキャッシュを強制破棄 -->
-    <script type="text/javascript" src="app.jsx?v=2" data-type="text/babel"></script>
+  <!-- React 18 -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Recharts (requires prop-types) -->
+  <script crossorigin src="https://unpkg.com/prop-types@15/prop-types.min.js"></script>
+  <script crossorigin src="https://unpkg.com/recharts@2.12.7/umd/Recharts.js"></script>
+
+  <!-- Babel (JSX transform in-browser) -->
+  <script crossorigin src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+</head>
+<body style="margin:0;background:#04080F;">
+  <div id="root"></div>
+  <script type="text/babel" src="app.jsx?v=3" data-presets="react"></script>
 </body>
 </html>
-
